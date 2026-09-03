@@ -16,4 +16,5 @@ def verfuegbare_buecher(buecher):
         if buch["Ausgeliehen"] == False:
             print(buch["Titel"])
 
+
 verfuegbare_buecher(buecher)

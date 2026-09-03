@@ -1,7 +1,7 @@
 noten = {"Anna": 1.3, "Ben": 2.7, "Clara": 1.0, "David": 3.3, "Elena": 1.7}
 
 summe = 0
-for x,y in noten.items():
+for x,y in noten.items():  #[("Anna", 1.3),  ("Ben", 2.7), ...]
     summe += y
 
 #alternativ könnten wir folgendes benutzen.
