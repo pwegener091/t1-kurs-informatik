@@ -14,7 +14,17 @@ werden
 def verfuegbare_buecher(buecher):
     for buch in buecher:
         if buch["Ausgeliehen"] == False:
-            print(buch["Titel"])
+            if buch["Autor"] == None:
+                print(f"\"{buch["Titel"]}\" von Unbekannt ({buch["Jahr"]})")
+            else:
+                print(f"\"{buch["Titel"]}\" von {buch["Autor"]} ({buch["Jahr"]})")
 
+#def verfuegbare_buecher(buecher):
+#    for buch in buecher:
+#        if buch["Autor"] == None:
+#            buch["Autor"] = "Unbekannt"
+#    for buch in buecher:
+#        if buch["Ausgeliehen"] == False:
+#            print(f"\"{buch["Titel"]}\" von {buch["Autor"]} ({buch["Jahr"]})")
 
 verfuegbare_buecher(buecher)
